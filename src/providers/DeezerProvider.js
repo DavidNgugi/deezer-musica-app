@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import { useQuery } from '@apollo/client';
 import DeezerContext from '../contexts/DeezerContext';
 
 import axios from 'axios';
@@ -61,7 +60,6 @@ const DeezerProvider = (props) => {
             .catch(errHandler);
 
         if (res.data) {
-            console.log(res.data)
             const track_data = res.data.sort((a, b) => b.rank - a.rank).slice(0, 5);
             setTracks(track_data);
         }
@@ -73,7 +71,6 @@ const DeezerProvider = (props) => {
             .catch(errHandler);
 
         if (res.data) {
-            console.log(res.data)
             const album_data = res.data.sort((a, b) => b.fans - a.fans).slice(0, 4);
             setAlbums(album_data);
         }

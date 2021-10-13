@@ -17,32 +17,32 @@ export const ArtistDetails = () => {
                             :
 
                             <div className="row">
-                                {/* <div className="col-md-12"> */}
-                                <div className="card ">
-                                    <div className="row col-md-12">
-                                        <div className="col-sm-12 col-md-6 text-white">
-                                            <img className="card-img artist-art" src={value.artist.picture_big} alt="sans" />
-                                            <div className="card-img-overlay artist-details-overlay">
-                                                <h5 className="card-title"><span>{value.artist.name}</span></h5>
-                                                <p className="card-text"><span>{nFormatter(value.artist.nb_fan)} Fans</span></p>
+                                <div className="col-md-12">
+                                    <div className="card ">
+                                        <div className="row col-md-12">
+                                            <div className="col-sm-12 col-md-6 text-white">
+                                                <img className="card-img artist-art" src={value.artist.picture_big} alt="sans" />
+                                                <div className="card-img-overlay artist-details-overlay">
+                                                    <h5 className="card-title"><span>{value.artist.name}</span></h5>
+                                                    <p className="card-text"><span>{nFormatter(value.artist.nb_fan)} Fans</span></p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="col-sm-12 col-md-6 content-right">
-                                            <h5 className="card-title d-flex">Top Tracks</h5>
-                                            <ul className="list-group list-group-flush ">
-                                                {
-                                                    value.tracks.map((track, index) => {
-                                                        return <li className="list-group-item d-flex">
-                                                            <span className="track-name">{index + 1}. {track.title_short}</span>
-                                                            <span className="duration">{toReadableDuration(track.duration)}</span>
-                                                        </li>
-                                                    })
-                                                }
-                                            </ul>
+                                            <div className="col-sm-12 col-md-6 content-right">
+                                                <h5 className="card-title d-flex">Top Tracks</h5>
+                                                <ul className="list-group list-group-flush ">
+                                                    {
+                                                        value.tracks.map((track, index) => {
+                                                            return <li className="list-group-item d-flex">
+                                                                <span className="track-name">{index + 1}. {track.title_short}</span>
+                                                                <span className="duration">{toReadableDuration(track.duration)}</span>
+                                                            </li>
+                                                        })
+                                                    }
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                {/* </div> */}
                             </div>
 
                         }

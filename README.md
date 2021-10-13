@@ -47,15 +47,7 @@ Most browsers enforce the same-origin restriction which may prevent HTTP calls t
 
 <br />
 
-- You can also use the Angular proxy configuration to circumvent CORS issue https://angular.io/guide/build#proxying-to-a-backend-server.
-
-<br />
-
-> The project was bootstrapped with Angular CLI 11.2.8 using this command: `ng new musicdb-app`
-
-<br />
-
-You are also welcome to create a fresh Angular Project from your local environment, publish it on GitHub and share the link with us.
+> The project was bootstrapped with React Create-React-App using this command: `npx create-react-app musicdb-app`
 
 <br />
 
