@@ -11,6 +11,10 @@
   }
 }
 
+img {
+  background-color: #ccc;
+}
+
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -96,6 +100,11 @@
   font-weight: 300;
   text-shadow: 2px 2px #000;
   background: rgba(0, 0, 0, 0.6);
+  transition: 0.2s;
+}
+
+.artist-details-overlay:hover {
+  backdrop-filter: blur(2px);
 }
 
 .artist-details-overlay span {

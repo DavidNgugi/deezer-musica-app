@@ -21,7 +21,7 @@ export const ArtistDetails = () => {
                                     <div className="card ">
                                         <div className="row col-md-12">
                                             <div className="col-sm-12 col-md-6 artist-art text-white">
-                                                <img className="card-img " src={value.artist.picture_big} alt="sans" />
+                                                <img className="card-img " src={value.artist.picture_big} loading="lazy" alt="sans" />
                                                 <div className="card-img-overlay artist-details-overlay">
                                                     <h5 className="card-title"><span>{value.artist.name}</span></h5>
                                                     <p className="card-text"><span>{nFormatter(value.artist.nb_fan)} Fans</span></p>

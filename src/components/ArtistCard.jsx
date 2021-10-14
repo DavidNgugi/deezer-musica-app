@@ -7,7 +7,7 @@ export const ArtistCard = (props) => {
 
     return (
         <div className="card artist-card col-sm-12 h-100" onClick={() => context.getArtist(props.artist.id)}>
-            <img src={props.artist.picture_medium} className="card-img" alt="..." />
+            <img src={props.artist.picture_medium} className="card-img" loading="lazy" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">{props.artist.name}</h5>
                 <p className="card-text">{nFormatter(props.artist.nb_fan)} Fans</p>
