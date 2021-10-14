@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
-import { ArtistCardList } from './components/ArtistCardList';
-import { ArtistDetails } from './components/ArtistDetails';
+import ArtistCardList from './components/ArtistCardList';
+import ArtistDetails from './components/ArtistDetails';
 
 function App() {
   return (
