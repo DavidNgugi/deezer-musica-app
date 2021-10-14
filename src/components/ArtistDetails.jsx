@@ -57,7 +57,7 @@ const ArtistDetails = () => {
                             <div className="card-group">
                                 {
                                     value.albums.map((album, index) => {
-                                        return <span className="album-item" key={index}><AlbumCard album={album} key={index} /></span>
+                                        return <AlbumCard album={album} key={index} />
                                     })
                                 }
                             </div>

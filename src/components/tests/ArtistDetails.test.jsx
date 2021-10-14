@@ -36,7 +36,7 @@ describe("Test ArtistDetails component", () => {
         expect(wrapper.find(".artist-name").text()).toBe(artist.name);
         expect(wrapper.find(".fans").text()).toBe(`${nFormatter(artist.nb_fan)} Fans`);
         expect(wrapper.find("li.track-item")).toHaveLength(5);
-        expect(wrapper.find(".album-card")).toHaveLength(4);
+        expect(wrapper.find(".card-group").children()).toHaveLength(4);
     });
 
 });
