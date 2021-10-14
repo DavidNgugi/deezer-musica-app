@@ -65,6 +65,6 @@ app.use(function (err, req, res, next) {
 // Start the server
 var server = http.createServer(app);
 
-server.listen(process.env.SERVER_PORT || 3001)
+server.listen(process.env.SERVER_PORT || process.env.PORT || 8001, "0.0.0.0")
     .on('listening', () => console.log(`Go to http://localhost:${process.env.SERVER_PORT}/api to run queries!`))
     .on('error', (error) => { throw error });
