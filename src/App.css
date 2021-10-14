@@ -1,5 +1,8 @@
 .App {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  margin-left: 5%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -33,8 +36,12 @@
 
 .list-body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+}
+
+.card {
+  border: none;
 }
 
 .artist-card {
@@ -46,7 +53,7 @@
   z-index: 1;
 }
 
-.artist-card > .card-body {
+.artist-card .card-body {
   overflow: hidden;
   overflow-wrap: break-word;
 }
@@ -58,7 +65,7 @@
 }
 
 .navbar {
-  padding-left: 10px;
+  padding-left: 5%;
 }
 
 .artist-card:hover {
@@ -69,24 +76,30 @@
 
 .artist-art {
   width: auto;
+  padding: 0;
+  position: relative;
 }
 
 .artist-details-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 25%;
+  width: auto;
   display: flex;
   flex-direction: column;
-  height: 100;
-  top: 200px;
-  left: 50px;
-  right: auto;
-  width: auto;
-  font-size: 2rem;
   text-align: left;
+  align-items: left;
   justify-content: left;
+  font-size: 2rem;
   font-weight: 300;
   text-shadow: 2px 2px #000;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-.artist-details-overlay > span {
+.artist-details-overlay span {
+  padding-top: 20px;
   color: white;
   font: bold 24px/45px Helvetica, Sans-Serif;
   letter-spacing: -1px;
@@ -95,24 +108,25 @@
 }
 
 .artist-details-overlay .card-title {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .artist-details-overlay .card-text {
   font-size: 2rem;
 }
 
-.content-right {
+.tracks-list {
   padding-top: 50px;
   align-items: flex-start;
 }
 
-.content-right .card-title {
+.tracks-list .card-title {
   padding-left: 10px;
 }
 
 .albums {
   margin-top: 20px;
   padding-top: 20px;
+  padding-left: 0;
 }
 
 .track-name {
@@ -127,7 +141,11 @@
   display: inline-block;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
+  .App {
+    margin-left: 3%;
+  }
+
   .album-count {
     display: none;
   }

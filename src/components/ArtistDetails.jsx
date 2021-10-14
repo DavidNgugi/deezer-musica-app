@@ -20,14 +20,14 @@ export const ArtistDetails = () => {
                                 <div className="col-md-12">
                                     <div className="card ">
                                         <div className="row col-md-12">
-                                            <div className="col-sm-12 col-md-6 text-white">
-                                                <img className="card-img artist-art" src={value.artist.picture_big} alt="sans" />
+                                            <div className="col-sm-12 col-md-6 artist-art text-white">
+                                                <img className="card-img " src={value.artist.picture_big} alt="sans" />
                                                 <div className="card-img-overlay artist-details-overlay">
                                                     <h5 className="card-title"><span>{value.artist.name}</span></h5>
                                                     <p className="card-text"><span>{nFormatter(value.artist.nb_fan)} Fans</span></p>
                                                 </div>
                                             </div>
-                                            <div className="col-sm-12 col-md-6 content-right">
+                                            <div className="col-sm-12 col-md-6 tracks-list">
                                                 <h5 className="card-title d-flex">Top Tracks</h5>
                                                 <ul className="list-group list-group-flush ">
                                                     {

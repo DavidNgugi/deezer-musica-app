@@ -19,7 +19,7 @@ export const ArtistCardList = () => {
                                 <ul className="nav d-flex col-lg-12 align-items-center">
                                     {
                                         value.artists.map((artist, index) => {
-                                            return <li className="nav-item p-1 mb-5" key={index}>
+                                            return <li className="nav-item p-1 mb-5 d-flex" key={index}>
                                                 <Link
                                                     to={`/artist/${artist.id}`}
                                                     className="link-artist"
