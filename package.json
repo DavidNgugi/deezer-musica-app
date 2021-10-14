@@ -22,12 +22,11 @@
     "node": "14.x"
   },
   "scripts": {
-    "preinstall": "npm install pm2 -g",
     "start": "PORT=8001 pm2 start ecosystem.config.js --env development && react-scripts start",
     "start-web": "react-scripts start",
     "start-server": "node 'server/index.js'",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "yarn jest",
     "eject": "react-scripts eject",
     "hacker-rank:start": "react-scripts start --host 0.0.0.0 --port 8000 --disable-host-check",
     "hacker-rank:test": "./hackerrank.sh"
@@ -49,5 +48,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "axios-mock-adapter": "^1.20.0",
+    "babel-jest": "^26.6.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "supertest": "^6.1.6"
   }
 }
