@@ -23,7 +23,7 @@
   },
   "scripts": {
     "preinstall": "npm install pm2 -g",
-    "start": "pm2-runtime start ecosystem.config.js --env development && react-scripts start",
+    "start": "SERVER_PORT=8000 PORT=3000 pm2-runtime start ecosystem.config.js --env development && react-scripts start",
     "start-web": "react-scripts start",
     "start-server": "node 'server/index.js'",
     "build": "react-scripts build",
