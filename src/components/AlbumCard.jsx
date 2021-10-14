@@ -1,10 +1,10 @@
 import React from 'react';
 import { getDate } from '../utils';
 
-export const AlbumCard = (props) => {
+const AlbumCard = (props) => {
 
     return (
-        <div className="card col-auto artist-card col-sm-12">
+        <div className="card col-auto artist-card album-card col-sm-12">
             <img src={props.album.cover_medium} className="card-img" loading="lazy" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">{props.album.title}</h5>
@@ -13,3 +13,5 @@ export const AlbumCard = (props) => {
         </div>
     );
 }
+
+export default AlbumCard;

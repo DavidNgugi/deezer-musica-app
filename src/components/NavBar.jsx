@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import DeezerContext from "../contexts/DeezerContext";
 
-export const NavBar = () => {
+const NavBar = () => {
     const ctx = React.useContext(DeezerContext);
     const [searchTerm, setSearchTerm] = React.useState("");
 
@@ -42,3 +42,5 @@ export const NavBar = () => {
         </nav>
     );
 };
+
+export default NavBar;
